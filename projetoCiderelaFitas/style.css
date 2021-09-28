@@ -1,0 +1,616 @@
+html,
+body {
+  margin: 0px;
+  padding: auto;
+  font-family: "Montserrat", sans-serif;
+}
+
+.header {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: " imgLogo btn-menu";
+  position: fixed;
+  width: 100%;
+  height: 130px;
+  transition: 0.4s;
+}
+
+.imgLogo {
+  grid-area: imgLogo;
+  margin-left: 40%;
+  height: 115px;
+}
+
+.btn-menu {
+  cursor: pointer;
+  grid-area: btn-menu;
+  margin-top: 50px;
+  margin-left: 54%;
+  position: absolute;
+  width: 15px;
+  height: 20px;
+}
+
+.btn-menu span {
+  height: 2px;
+  display: block;
+  margin-bottom: 3px;
+  background-color: #fff;
+}
+
+.redes-sociais {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  right: 0px;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  top: 50%;
+  height: 100px;
+  margin-top: -50px;
+  padding: 5px 0px;
+  width: 50px;
+}
+
+.scroll {
+  height: 50px;
+  width: 100%;
+  background-color: #f4793b;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: " imgscrol btn-menu-scroll";
+  position: fixed;
+  transition: 0.4s;
+  border-bottom: 1px solid #000;
+}
+
+.imgscrol {
+  margin-top: -6px;
+  grid-area: imgscrol;
+  margin-left: 23%;
+  height: 65px;
+}
+
+.btn-menu-scroll {
+  cursor: pointer;
+  grid-area: btn-menu;
+  margin-top: 21px;
+  margin-left: 46.6%;
+  position: absolute;
+  width: 15px;
+  height: 20px;
+}
+
+.btn-menu-scroll span {
+  height: 2px;
+  display: block;
+  margin-bottom: 3px;
+  background-color: #fff;
+}
+
+.barra-menu {
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 24%;
+  height: 297px;
+  right: 0px;
+}
+
+.btn-menu-two {
+  cursor: pointer;
+  margin-top: 50px;
+  margin-left: 17px;
+  position: absolute;
+  width: 15px;
+  height: 20px;
+  color: #fff;
+}
+
+.btn-menu-two span {
+  height: 2px;
+  display: block;
+  margin-bottom: 3px;
+  background-color: #fff;
+}
+
+.imgBanner {
+  width: 100%;
+  background-position: center top;
+}
+
+#porque-investir {
+  display: grid;
+  grid-template-columns: 55% 1fr;
+  background-color: #f4793b;
+  grid-template-areas: " .  fitas-icone  .";
+}
+
+.imagemChotone {
+  height: 1100px;
+  background-image: url(Imagens/imgPanetone.jpg);
+  background-size: cover;
+  background-position: center center;
+}
+
+.conteudo {
+  display: grid;
+  grid-template-rows: 25% 17% 1fr;
+  grid-template-columns: 1fr 1fr 40% 20% 1fr 1fr;
+  grid-template-areas:
+    ". . detalhe . . ."
+    ". . fitas-personalizadas . . ."
+    ". . conteudo-fitas . . .";
+  width: 100%;
+}
+
+.detalhe {
+  display: flex;
+  align-items: flex-end;
+  grid-area: detalhe;
+}
+
+.conteudo-detalhe {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 300px;
+  height: 56px;
+  background-color: #2f2b2c;
+  color: #fff;
+  letter-spacing: 0.3rem;
+  font-size: 14px;
+}
+
+.fitas-personalizadas {
+  grid-area: fitas-personalizadas;
+  margin-top: 19px;
+  color: #fff;
+  font-weight: bold;
+  font-size: 36px;
+}
+
+.conteudo-fitas {
+  font-size: 16px;
+  text-align: justify;
+  margin-top: 19px;
+  grid-area: conteudo-fitas;
+  color: #fff;
+  margin-right: 25px;
+  line-height: 1.5;
+}
+
+.fitas-icone {
+  grid-area: fitas-icone;
+  border-radius: 40px;
+  width: 70px;
+  height: 70px;
+  background-color: #2f2b2c;
+  margin-left: -35px;
+  margin-top: 555px;
+}
+
+.icone-conteudo {
+  margin-top: 23px;
+  margin-left: 25px;
+  height: 20px;
+  width: 20px;
+  background-image: url(Imagens/seta.png);
+  background-size: cover;
+  background-position: center center;
+}
+
+#estao-com-a-gente {
+  background-color: #711a37;
+  padding: 100px 0px 50px 0px;
+  margin: 0px;
+  text-align: center;
+  height: 218px;
+  color: #fff;
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.row1 {
+  margin-bottom: 26px;
+}
+
+.row2 {
+  display: flex;
+  justify-content: space-around;
+}
+
+.conteudo-col1 {
+  align-items: center;
+  margin-left: 15% !important;
+  height: 174px;
+  width: 175px;
+  background-image: url(Imagens/imgCasaBalduco.png);
+  background-size: cover;
+  background-position: center center;
+}
+
+.conteudo-col2 {
+  margin-top: 50px;
+  align-items: center;
+  height: 38px;
+  width: 204px;
+  background-image: url(Imagens/imgBoticario.png);
+  background-size: cover;
+  background-position: center center;
+}
+
+.conteudo-col3 {
+  margin-top: 50px;
+  align-items: center;
+  margin-right: 15% !important;
+  height: 92px;
+  width: 283px;
+  background-image: url(Imagens/imgSanta.png);
+  background-size: cover;
+  background-position: center center;
+}
+
+#escolha-cindera {
+  height: 777px;
+  background: linear-gradient(0deg, #fd9418 0%, #ffab28 70%);
+}
+
+.cindera-conteudo {
+  margin-left: 15%;
+  max-width: 1140px;
+}
+
+.cont-col1 {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-areas: "cind-col1 cind-col2";
+}
+
+.cind-col1 {
+  line-height: 1.5;
+  max-width: 72%;
+  margin-left: 100px;
+  margin-top: 100px;
+  grid-area: cind-col1;
+}
+
+.titulo-col1 {
+  font-weight: bold;
+  font-size: 36px;
+}
+
+p {
+  margin-top: -13px;
+  font-size: 15px;
+}
+
+.cind-col2 {
+  margin-top: -14px;
+}
+
+img {
+  vertical-align: middle;
+  border-style: none;
+}
+
+#produtos {
+  display: flex;
+  flex-direction: row;
+}
+
+.item {
+  width: 100%;
+  height: 400px;
+  background-size: cover;
+  background-position: center center;
+}
+
+.img01 {
+  background-image: url(Imagens/img1.jpg);
+}
+
+.img02 {
+  background-image: url(Imagens/img2.png);
+}
+.img03 {
+  background-image: url(Imagens/img5.jpg);
+}
+.img04 {
+  background-image: url(Imagens/img4.jpg);
+}
+.img05 {
+  background-image: url(Imagens/img3.jpg);
+}
+
+#contato {
+  width: 100%;
+  height: 970px;
+  background: linear-gradient(to left, #fff 60%, #fd7e2d 40%);
+}
+
+.conteudo-contato {
+  display: grid;
+  grid-template-columns: 40% 60%;
+  grid-template-areas: "cont-brilhante cont-conversar";
+}
+
+#cont-brilhante {
+  grid-area: cont-brilhante;
+  display: grid;
+  grid-template-columns: 30% 25% 40% 5%;
+  grid-template-areas:
+    ".  . titulo-brlhante ."
+    ".  . brilhante-cont .";
+  color: #fff;
+}
+
+.titulo-brlhante {
+  margin-top: 118px;
+  grid-area: titulo-brlhante;
+  font-weight: bold;
+  font-size: 36px;
+  text-align: justify;
+}
+
+.brilhante-cont {
+  grid-area: brilhante-cont;
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+.cont-catalogo {
+  margin-top: 40px;
+  display: flex;
+  justify-self: flex-end;
+  width: 350px;
+  height: 350px;
+  background-color: #ffa827;
+  border-radius: 50%;
+}
+
+.list {
+  flex-direction: column;
+  display: grid;
+  grid-template-columns: 35% 100%;
+  grid-template-areas: ". dados-catalogo .";
+}
+
+.dados-catalogo {
+  margin-top: 59px;
+  grid-area: dados-catalogo;
+}
+
+ul {
+  font-size: 15px;
+  margin-left: -36px;
+  list-style-type: none;
+  line-height: 1.5;
+  color: #000;
+}
+
+a:link,
+a:active {
+  text-decoration: none;
+  color: #000;
+}
+
+a:hover,
+a:visited {
+  color: #000;
+  text-decoration: underline;
+}
+
+.nav-menu {
+  margin-top: 44px;
+  line-height: 2.5 !important;
+  font-size: 14px;
+  margin-left: 30px;
+}
+
+a.nav-link:link {
+  text-decoration: none;
+}
+
+.nav-menu li:hover .nav-link {
+  color: #fd7e2d;
+}
+
+.nav-link a:active,
+.nav-item a:visited {
+  text-decoration: none;
+  color: #fff;
+}
+
+.instagram {
+  margin-left: 9px;
+  width: 30px;
+  height: 30px;
+}
+
+.facebook {
+  margin-left: 15px;
+  width: 20px;
+  height: 20px;
+}
+
+.pinterest {
+  margin-left: 14px;
+  width: 20px;
+  height: 20px;
+}
+
+.cont-conversar {
+  grid-area: cont-conversar;
+  display: flex;
+  flex-direction: column;
+}
+.cont-tit-conversar h2 {
+  font-size: 36px;
+  font-weight: bold;
+  margin-left: 10%;
+}
+
+.cont-tit-conversar {
+  margin-top: 150px;
+}
+
+.conversar-vamos {
+  font-size: 15px;
+  line-height: 1.5;
+  margin-top: 30px;
+  margin-left: 10%;
+}
+
+.cont-contato {
+  display: flex;
+  flex-direction: row-reverse;
+  margin-top: -112px;
+  margin-right: 38%;
+}
+
+.emai-tel {
+  line-height: 1.5;
+  font-size: 15px;
+}
+
+a.email {
+  color: #f4793b;
+}
+
+.input-cont {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-left: 33%;
+  width: 350px;
+  gap: 10px;
+}
+
+#input {
+  width: 350px;
+  height: 25px;
+}
+
+#text-area {
+  width: 350px;
+  height: 120px;
+}
+
+#btnEnviar {
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+  background-color: transparent;
+  text-decoration: none;
+  border: 0px;
+  align-self: flex-end;
+}
+
+.img-balduco {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  justify-content: center;
+  margin-top: -397px;
+  margin-left: 771px;
+}
+
+.imgBaldudo {
+  width: 500px;
+  height: 500px;
+}
+
+footer {
+  margin-top: -7px;
+  background-color: #000;
+  padding: 50px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  color: #999999;
+}
+
+@media (max-width: 1366px) {
+  .conteudo {
+    display: grid;
+    grid-template-rows: 25% 17% 1fr;
+    grid-template-columns: 10% 10% 55% 5% 10% 10%;
+    grid-template-areas:
+      ". . detalhe . . ."
+      ". . fitas-personalizadas . . ."
+      ". . conteudo-fitas . . .";
+    width: 100%;
+  }
+
+  .item {
+    height: 300px;
+  }
+
+  .fitas-icone {
+    margin-top: 379px;
+  }
+
+  .imgLogo {
+    height: 100px;
+  }
+
+  .imagemChotone {
+    height: 843px;
+  }
+
+  .conteudo-fitas {
+    margin-top: 56px;
+  }
+
+  .cindera-conteudo {
+    margin-left: 0%;
+  }
+
+  #cont-brilhante {
+    margin-top: -45px;
+    grid-area: cont-brilhante;
+    display: grid;
+    grid-template-columns: 30% 55% 20%;
+    grid-template-areas:
+      ".  titulo-brlhante ."
+      ".  brilhante-cont  .";
+    color: #fff;
+  }
+
+  .titulo-brlhante {
+    margin-top: 140px;
+  }
+
+  .cont-tit-conversar {
+    margin-top: 100px;
+  }
+
+  .cont-contato {
+    display: flex;
+    flex-direction: row-reverse;
+    margin-top: -112px;
+    margin-right: 22%;
+  }
+
+  .img-balduco {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    justify-content: center;
+    margin-top: -397px;
+    margin-left: 533px;
+  }
+  .imgBaldudo {
+    width: 400px;
+    height: 400px;
+  }
+
+  .btn-menu-two {
+    margin-left: 12px;
+  }
+
+  .btn-menu-scroll {
+    margin-left: 43.6%;
+  }
+}
